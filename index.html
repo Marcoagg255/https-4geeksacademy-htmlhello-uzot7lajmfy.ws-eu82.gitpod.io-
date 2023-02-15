@@ -29,38 +29,47 @@
       <form>
         <div class="row">
           <div class="col-4"> Card #
-            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXX">
+            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" maxlength="16" minlength="16" required>
           </div>
           <div class="col-4">CVC #
-            <input type="text" class="form-control" placeholder="0000">
+            <input type="text" class="form-control" placeholder="0000" minlength="4" maxlength="4" required>
           </div>
           <div class="col-4">Amount $
-            <input type="text" class="form-control" placeholder="Amount">
+            <input type="number" class="form-control" placeholder="Amount" required>
           </div>
         </div>
         <div class="row">
           <div class="col"> First Name
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" placeholder="First name" required>
           </div>
           <div class="col"> Last Name
-            <input type="text" class="form-control" placeholder="Last name">
+            <input type="text" class="form-control" placeholder="Last name" required>
           </div>
         </div>
         <div class="row">
           <div class="form-group col-6">
             <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" required>
           </div>
           <div class="form-group col-4">
             <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
+            <select id="inputState" class="form-control" required>
               <option selected>Pick A State...</option>
-              <option>...</option>
+              <option>Amazonas</option>
+              <option>Anzoategui</option>
+              <option>Falcon</option>
+              <option>Apure</option>
+              <option>Aragua</option>
+              <option>Barinas</option>
+              <option>Bolivar</option>
+              <option>Carabobo</option>
+              <option>Cojedes</option>
+
             </select>
           </div>
           <div class="form-group col-2">
             <label for="inputZip">Postal Code</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" required>
           </div>
         </div>
 
@@ -69,23 +78,23 @@
             <p>We accept:</p>
             <div class="bg-secondary p-3 rounded" style="width: 280px;">
                 <div class="custom-control custom-radio custom-control-inline ">
-                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline1"><i
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+  <label class="form-check-label" for="flexRadioDefault1"><i
                       class="fa-brands fa-cc-visa"></i></label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline ">
-                  <input type="radio" id="customRadioInline2" name="customRadioInline2" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline2"><i
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+  <label class="form-check-label" for="flexRadioDefault2"><i
                       class="fa-brands fa-cc-amex"></i></label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline3"><i
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+  <label class="form-check-label" for="flexRadioDefault1"><i
                       class="fa-brands fa-cc-mastercard"></i></label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline4"><i
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+  <label class="form-check-label" for="flexRadioDefault1"><i
                       class="fa-brands fa-cc-paypal"></i></label>
                 </div>   
             </div>
@@ -101,8 +110,8 @@
       </div>
         <div id="footer" class="container-fluid bg-light py-2  px-0 ">
           <div class="container-fluid d-flex justify-content-end  ">
-            <button type="button" class="btn btn-secondary m-2">Cancel</button>
-            <button type="button" class="btn btn-primary m-2">Send</button>
+            <button type="reset" class="btn btn-secondary m-2">Cancel</button>
+            <button type="submit" class="btn btn-primary m-2">Send</button>
           </div>
         </div>
     
